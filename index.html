@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Anime Character Finder
+        </title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <header1>
+            <h2 class = "acf">ACF</h2>
+            <nav class="navigation">
+                <a href = "#">Home</a>
+                <a href = "#">About</a>
+                <a href = "#">Help</a>
+                <a href = "#">Contact</a>
+                <button class = "login">Login</button>
+            </nav>
+        </header1>
+        <header>
+            <div class = "wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon>
+                    </span>
+                <div class = "login-box">
+                    <h2>Login</h2>
+                    <form id = "login-form" action="#" onsubmit="return validateLogin()">
+                        <div class = "input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type = "email" required/>
+                            <label for="">Email</label>
+                        </div>
+                        <div class = "input-box">
+                            <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                            <input type = "password" required/>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember-forget">
+                            <label for=""><input type="checkbox"/>Remember me</label>
+                            <a href = "#">Forgot Password</a>
+                        </div>
+                        <button type = "submit" class="btn"><a href = "new1.html">Login</a></button>
+                        <div class = "login-register">
+                            <p>Don't have an account?<a href = "#" class = "register-link"> Register</a></p>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  -->
+                </div>
+            </div>
+
+        </header>
+        <script src = "script.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Animation */
+body {
+    background: url("photo/1142011.jpg") no-repeat; 
+    background-size: 110% 110%;
+    animation: background-animation 3s ease infinite;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    margin-right: 560px;
+    margin-bottom:200px;
+    color:#162938;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    /* letter-spacing: px; */
+    /* animation: bounce 2s ease-in infinite; */
+}
+
+.search-box {
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    background-color: grey
+}
+#search-bar::placeholder{
+    color:#fff
+}
+
+#search-bar:focus {
+    width: 350px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff006e;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 50px;
+}
+
+.search-btn:hover {
+    transform: rotate(0deg);
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.8);
+}
+
+Image Grid with Crazy Hover Animations
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+@keyframes background-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.image-container img{
+    width: 60vh;
+    height: 60vh;
+    margin-right: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+
+}
+
+
+
